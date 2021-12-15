@@ -31,8 +31,7 @@ select concat (nazwa," - ",rodzaj) from kreatura where rodzaj like "wi%";
 select concat(nazwa," - ",waga,' ',ilosc) from zasob where year(datapozyskania) between 2000 and 2007;
 
 Zadanie 5
-a)
 
-b) select nazwa from zasob where rodzaj is null;
-
-C)
+1.select concat('netto waga ', nazwa, waga*70/100, 'odpad ', nazwa, waga*30/100) as tekst from zasob;
+ 
+2.select nazwa from zasob where rodzaj=null;
